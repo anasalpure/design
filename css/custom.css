@@ -1,11 +1,36 @@
-.searchform{
-width:80%;
-transform: easy 2 2;
+/*
+auther : anas alpure
+maincolors:
+1:#08526d
+2:#eclc23
+*/
+
+
+
+.searchform input{
+    /*
+    width:80%;
+    transition-property: width;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
+    */
+    transition: width 2s linear 1s; 
+    -webkit-transition: width 2s linear 1s; 
 }
 .searchform input:hover{
 width:70%;
 }
 
 .upper-bar{
-    background-color: #e2e;
+    background-color: #08526d;
+    padding:10px;
+    color: #fff;
+}
+
+.upper-bar .quote{
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #ec1c23;
+    padding: 2px;
 }
