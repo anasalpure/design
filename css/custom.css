@@ -1,0 +1,11 @@
+.searchform{
+width:80%;
+transform: easy 2 2;
+}
+.searchform input:hover{
+width:70%;
+}
+
+.upper-bar{
+    background-color: #e2e;
+}
