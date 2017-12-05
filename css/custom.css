@@ -7,24 +7,10 @@ maincolors:
 
 
 
-.searchform input{
-    /*
-    width:80%;
-    transition-property: width;
-    transition-duration: 5s;
-    transition-timing-function: linear;
-    transition-delay: 0.2s;
-    */
-    transition: width 2s linear 1s; 
-    -webkit-transition: width 2s linear 1s; 
-}
-.searchform input:hover{
-width:70%;
-}
 
 .upper-bar{
     background-color: #08526d;
-    padding:10px;
+    padding:3px;
     color: #fff;
 }
 
@@ -34,3 +20,40 @@ width:70%;
     border: 1px solid #ec1c23;
     padding: 2px;
 }
+
+.upper-bar i{
+padding: 4px;
+color: #7cda17;
+}
+
+
+
+/*navbar*/
+
+.searchform{
+    width:60%;
+    margin-left:auto;
+}
+.searchform input{
+    /*
+  
+    transition-property: width;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
+    */
+ 
+    width:50%;
+    transition: width 0.5s ease 0s;
+    -webkit-transition: width 2s ease 1s; 
+}
+.searchform input:hover{
+width:85%;
+}
+
+.searchform *{
+    display: inline-block;
+    margin-bottom: 0.5rem !important;
+}
+
+/* end navbar*/
