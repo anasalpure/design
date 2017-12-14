@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<title>anas</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  
 </head>
-<body>
+<body class="bg-site2" dir="ltr">
 
 <!--upperbar-->
 
@@ -17,10 +19,14 @@
   <div class="container">
           <div class="row">
               <div class="col-sm">
-                <i class="fa fa-phone"></i><span>09354543543543</span>
-                 <i class="fa fa-envelope"></i><span>anas@gmail.com</span>
+                    <ul class="social-icon d-flex">
+                            <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                            <li class="bgred"><i class="fa fa-google-plus"></i></li>
+                            <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                            <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+                    </ul>
               </div>
-              <div class="col-sm text-right">
+              <div class="col-sm alignLR">
                  <span>let's work Together!</span>
                  <span class="quote">Get Quote</span>
               </div>
@@ -39,8 +45,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand pr-4" href="#"> <img src="img/logo.png" alt="logo"/>ALWESAL </a>
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <a class="navbar-brand pr-lg-4" href="#"> <img src="img/logo.png" alt="logo"/>ALWESAL </a>
+      <ul class="navbar-nav  mt-2 mt-lg-0">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
@@ -57,9 +63,10 @@
           <a class="nav-link" href="#">about</a>
         </li>
       </ul>
-      <form class="my-2 my-lg-0 ml-auto searchform ">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <form class="searchform ">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success mx-1" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+        </button>
       </form>
     </div>
   </div>
@@ -67,35 +74,341 @@
 <!--endnavbar-->
 
 <!--Banner-->
-<div class="banner"> 
- 
+<div class="banner d-flex flex-column justify-content-between"> 
+  
+    <img class="w-100 h-100 cover" src="img/banner.jpg" alt="baner bakground">
+   
+     <p class="m-lg-5 resume">
+          We’re an Independent<br>
+          Design and  <span>Development</span><br>
+          Agency.
+      </p>
 
 
+
+    <div class="card-text p-2 mx-sm-4 ">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem</p>
+             <p class="text-typing d-inline px-2">Hello , CSS-Support !</p> 
+      </div>
+
+      
 </div>
 
-<div class="w-100 text-slider">
-  <div class=" typing-slider">
-    <p>Text slider with</p>
-    <p>typing animation effect</p>
-    <p>in pure CSS.</p>
-  </div>
-</div>
+  <img class="w-100 mb-4 mb-lg-0" style="position: relative" src="img/linear.png" alt="bar">
+
 
 
 <!--endBanner-->
 
 
-<!--content-->
-<div class="container">
 
-  
+
+
+
+
+<!--service-->
+<section id="service" class="bg-site2" >
+		<div class="container">
+			<div class="row">
+          <div class="col-md-12 col-lg-4">
+              <h2 class="ser-title">Our Service</h2>
+              <hr class="botm-line">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris cillum.</p>
+          </div>
+          <div class="col-md-4 col-sm-4">
+              <div class="service-info text-center">
+                <div class="icon ">
+                  <i class="fa fa-cog "></i>
+                </div>
+                <div class="icon-info">
+                  <h4>24 Hour Support</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+              <div class="service-info text-center">
+                <div class="icon">
+                  <i class="fa fa-line-chart"></i>
+                </div>
+                <div class="icon-info">
+                  <h4>Emergency Services</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+              <div class="service-info text-center">
+                <div class="icon">
+                  <i class="fa fa-android"></i>
+                </div>
+                <div class="icon-info">
+                  <h4>Medical Counseling</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+              <div class="service-info text-center">
+                <div class="icon">
+                  <i class="fa fa-medkit"></i>
+                </div>
+                <div class="icon-info">
+                  <h4>Premium Healthcare</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+          </div>
+			</div>
+		</div>
+    </section>
+
+  <!--end service-->
+
+
+  <!--company Overview-->
+  <section id="Overview" class="bg-site2" >
+    <div class="container">
+     <div class="row overview my-3 p-2">
+       <h2 class="w-100">company Overview</h2>
+       <p class="w-100">
+          orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.
+       </p>
+       <p class="emphasis w-100">let's start today <button class="btn btn-info">more</button></p>
+       
+     </div>
+
+
+    </div>
+  </section>
+
+   <!--end company Overview-->
+
+
+
+<!--Portfolio-->
+<div class="container my-3">
+    <div class="row ">
+      <div class="col-6 col-lg-3 proto">
+          <img src="img/image1.jpg" alt="proto">
+          <img src="img/image2.jpg" alt="proto">
+      </div>
+      <div class="col-6 col-lg-3 proto">
+          <img src="img/image3.jpg" alt="proto">
+          <img src="img/image4.jpg" alt="proto">
+      </div>
+      <div class="col-6 col-lg-3 proto">
+          <img src="img/image5.jpg" alt="proto">
+          <img src="img/image6.jpg" alt="proto">
+      </div>
+      <div class="col-6 col-lg-3 proto">
+          <img src="img/image7.jpg" alt="proto">
+          <img src="img/image8.jpg" alt="proto">
+      </div>
+
+
+    </div>
 </div>
-<!--end content-->
+<!--end Portfolio-->
+
+
+
+<!-- posts-->
+<div class="posts container my-5">
+   <h2 class="text-center">latest post</h2>
+   <p  class="text-center p-2 ">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+  <div class="row">
+
+
+      <div class="col-12 col-md-6 col-lg-4 post">
+            <img src="img/image1.jpg" alt="">
+            <h3>anas</h3>
+            <p> amet, consectetur adipisicing elit, sed do 
+              aliqua.m veniam, quis nos exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvolup
+            </p>
+            <a href="#">read more</a>
+        </div>
+
+        <div class="col-12 col-md-6  col-lg-4 post">
+            <img src="img/image3.jpg" alt="">
+            <h3>developing</h3>
+            <p> dipi sed do 
+              aliqua.m veniam, quis nos exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lvolup
+            </p>
+            <a href="#">read more</a>
+        </div>
+
+        <div class="col-12 col-md-6  col-lg-4 post">
+            <img src="img/image7.jpg" alt="">
+            <h3>designing</h3>
+            <p> , consectetur adipisicing elit, sed do 
+              aliqua.m venition ullamco laboris nisi ut aliquip ex ea commodo consequat. lvolup
+            </p>
+            <a href="#">read more</a>
+        </div>
+
+  </div>
+</div>
+<!--end posts-->
+
+
+
+
+<!--slider-->
+<hr>
+<div class="carousel">
+
+  <div class="owl-carousel">
+
+    <div class="item">
+        <h1>hansom</h1>
+        <p>aliqua.m venition ullamco laboris nisi ut aliquip ex ea commodo consequat. lvolup</p>
+        <img class="w-100" src="img/image1.jpg" alt="*"> 
+    </div>
+
+    <div class="item">
+        <h1>carol</h1>
+        <p>venition ullamco laboris nisi ut aliquip ex ea commodo consequat. lvolupa liquip</p>
+        <img class="w-100" src="img/image4.jpg" alt="*"> 
+    </div>
+
+    <div class="item">
+        <h1>saden</h1>
+        <p>ullamco laboris nisi ut aliquip ex ea commodo consequat. lvolup consequat</p>
+        <img class="w-100" src="img/image3.jpg" alt="*"> 
+    </div>
+
+    <div class="item">
+        <h1>abson</h1>
+        <p>nisiu llamco laboris  ut aliquip ex ea commodo consequat. lvolupconsequat</p>
+        <img class="w-100" src="img/image6.jpg" alt="*"> 
+    </div>
+
+    <div class="item">
+        <h1>lorem</h1>
+        <p>venition ullamco laboris nisi ut aliquip ex ea commodo consequat. lvolupa liquip</p>
+        <img class="w-100" src="img/image8.jpg" alt="*"> 
+    </div>
+
+    <div class="item">
+        <h1>samds</h1>
+        <p> ullamco laboris nisi ut aliquip ex ea commodo consequat. lvolupa liquip</p>
+        <img class="w-100" src="img/image5.jpg" alt="*"> 
+    </div>
+
+  </div>
+
+</div>
+
+
+<hr class="m-0 p-0">
+<!--end slider-->
+
+
+
+<!--end contact-->
+
+<div class="row contact">
+    <div class="col-12 col-md-6 one">
+        <div class="info p-5">
+          <img src="img/logo.png" alt="logo"> 
+          <h2>ALWESAL</h2>
+          <h3>for computer network</h3>
+          <p>Anas Al-pure <br>
+             project manager  <br>
+             infomix82@gmail.com <br>
+             Syria-lattakia  <br>
+             0969893924 </p>
+        </div>
+         <img class="w-100" src="img/banner2.png" alt="___________________">
+    </div>
+
+
+    <div class="col-12 col-md-6 two">
+        <h2>Why Choose Us</h2>
+        <p> dipi sed do  aliqua.m veniam, quis nos exercitation ullamco laboris nisi 
+             ut aliquip ex ea commodo consequat. lvolup
+        </p>
+        <button class="btn btn-danger ">view more</button>
+    </div>
+
+</div>
+
+
+<div class="row note">
+    <p class="emphasis w-100">let's start work now  <button class="btn btn-info">more</button></p>
+</div>
+
+
+<img class="w-100  mb-lg-0 linear"  src="img/linear.png" alt="bar">
+
+
+<!--end contact-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--    footer     -->
+  <footer>
+      <div class="container">
+           <div class="row">
+ 
+                <div class="footer-para col-md-5 col-md-offset-1 col-sm-12">
+                     <h3>ALWESAL</h3>
+                     <p class=" pl-2"> ipsum dolor sit amet, eirmod consetetur sadipscing elitr, sed diam  eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                 
+                </div>
+
+                <div class="col-md-2"></div>
+ 
+                <div class=" footer-para col-md-5 col-md-offset-1 col-sm-12">
+                     <h3>Talk to us</h3>
+                     <p class=" pl-2" ><i class="fa fa-globe"></i> 122 damascous Street, badad , 1212</p>
+                     <p class=" pl-2"><i class="fa fa-phone"></i> 0969803024</p>
+                     <p class=" pl-2"><i class="fa fa-save"></i> anas@jop.com</p>
+                </div>
+ 
+                <div class="clearfix  col-sm-12">
+                     <hr class="bg-site2">
+                     <p class="Copyright px-3">Copyright © 2017 ALWESAL - Designer: anas alpure</p>
+                     <hr class="bg-site2">
+                </div>
+       
+                <div class="col-md-12  col-sm-12 ">
+                     <ul class="social-icon d-flex py-3">
+                          <li><a href="#" class="fa fa-facebook"></a></li>
+                          <li><a href="#" class="fa fa-twitter"></a></li>
+                          <li><a href="#" class="fa fa-google-plus"></a></li>
+                          <li><a href="#" class="fa fa-dribbble"></a></li>
+                          <li><a href="#" class="fa fa-linkedin"></a></li>
+                     </ul>
+                </div>
+                
+           </div>
+      </div>
+ </footer>
+
+
+
+
+
+ 
+
+
 
 
 <script type="text/javascript" src="js/jquery.js"    ></script>
 <script type="text/javascript" src="js/popper.min.js"    ></script>
 <script type="text/javascript" src="js/bootstrap.js" ></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/costum.js"    ></script>
 
 

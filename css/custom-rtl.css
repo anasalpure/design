@@ -9,6 +9,7 @@ maincolors:
 
 *{
   box-sizing:border-box;
+  font-family: 'Amiri', serif;
 }
 
 p.emphasis{
@@ -25,10 +26,10 @@ p.emphasis{
     
 }
 
-.alignLR{
-  text-align:right;
-}
 
+.alignLR{
+  text-align:left;
+}
 .upper-bar .quote{
     display: inline-block;
     margin-left: 10px;
@@ -78,11 +79,13 @@ p.emphasis{
 .navbar-brand {
   color: #69c3ff !important;
   text-shadow: #fff 1px -2px 7px;
-  
+  direction: ltr;
 }
+
 .navbar-brand img{
     width: 47%;
     height: auto;
+    
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -97,12 +100,13 @@ p.emphasis{
     display: inline-flex;
     flex-wrap: nowrap;
     width: 47%;
-    margin-left: auto !important;
- }
- 
+    margin-right: auto !important;
+   
+  }
+
  .searchform input{
     width:50%;
-    margin-left: auto;
+    margin-right: auto;
      /*
     transition-property: width;
     transition-duration: 5s;
@@ -133,7 +137,7 @@ p.emphasis{
 
 .resume {
   color:#fff;
-  font-size:3em;
+  font-size:5em;
   left: 2px;
   z-index:2;
 }
@@ -268,8 +272,7 @@ p.emphasis{
 
 .text-typing { 
 
-    border-right: .3em solid black;
-
+    border-left: .3em solid black;
     -webkit-animation: 
                blink-caret .5s step-end infinite alternate;
 
@@ -381,21 +384,21 @@ p.emphasis{
   }
   
   .post h3{
-    padding-left: 8px; 
+    padding-right: 8px; 
     color: #42b1fb; 
     text-transform: capitalize;
   }
 
   .post p{
-    padding-left: 8px;
-    padding-right: 2px;
+    padding-left: 3px;
+    padding-right: 8px;
     text-align: justify;
     color: #848282;
     margin-bottom: 1px;;
   }
 
   .post a{
-    padding-left:8px;
+    padding-right:8px;
   }
 
 /*end posts*/
@@ -448,6 +451,7 @@ p.emphasis{
   height: 90%;
   display: flex;
   align-items: center;
+  left: 2px;
 }
 
 .owl-nav .owl-next {
@@ -462,7 +466,7 @@ p.emphasis{
   position: absolute;
   top: 3%;
   height: 90%;
-  right: 2px;
+
   display: flex;
   align-items: center;
 }
@@ -485,7 +489,10 @@ p.emphasis{
 .contact .one img.w-100{
   position: relative;
   bottom:0px;
+  transform: rotateY(180deg);
+
 }
+
 .contact .one .info{
   text-align: center
 }
@@ -497,7 +504,7 @@ p.emphasis{
 }
 
 .contact .one .info p{
-  text-align: left;
+  text-align: right;
   font-family:Lato,Consolas;
   font-size:22px;
   color: #5f5858
@@ -505,7 +512,7 @@ p.emphasis{
 
 .contact .two {
   background: #08526d;
-  box-shadow: inset -2px -1px 3px #eef3f5;
+  box-shadow: inset 2px -1px 3px #eef3f5;
   color: #fff;
   padding:22px;
 }
@@ -575,13 +582,14 @@ footer .social-icon{
 @media (max-width: 991px){
   .navbar-brand{
     position: absolute;
-    right: -60px;
+    left: -60px;
     top: 1px;
 
   }  
   
   .resume {
-    font-size:2em;
+    font-size:3em;
+    padding-right:6px;
   }
   
   .navbar-brand img {
@@ -592,11 +600,11 @@ footer .social-icon{
    .contact .one img.w-100{
      display:none;
    }
- 
 
    .alignLR{
     text-align:center;
   }
+
 
   
   }
